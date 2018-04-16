@@ -17,7 +17,7 @@ Labs 1 and 2 require the Jumpbox. The subsequent labs all use the Azure Cloud Sh
 1. Clone the Github repo via the command line
 
     ```
-    git clone https://github.com/Azure/blackbelt-aks-hackfest.git
+    git clone https://github.com/ncmpuolitaival/akslab.git
     ```
 2. Create new Resource Group
     ```
