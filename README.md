@@ -111,6 +111,12 @@ The web frontend for the app is written in [Vue.js](https://vuejs.org/Vue "Vue.j
 
 Close the web and api apps in the terminal windows by hitting `ctrl-c` in each of the corresponding terminal windows
 
+Stop the MongoDB to free the port 27017 on the jumpbox.
+    ```bash
+    sudo systemctl stop mongod
+    ```
+
+
 ## Contiune labs
 
 Proceed with lab number 2:
