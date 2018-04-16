@@ -1,10 +1,10 @@
-# Initial Setup and Running App on Local Machine
+# LAB 1: Initial Setup and Running App on Local Machine
 
 ## Work Environment
 
 There are two environments you will be working in for the exercises today.
 
-1. **Jumpbox:** The apps and containers must be run on a Linux machine. A CentOS linux machine has been created for you in your Azure subscription.
+1. **Jumpbox:** The apps and containers must be run on a Linux machine. 
 
     > Note: If you have bash or ssh available on your machine, it is easiest to access the jump box via SSH. Otherwise, RDP is required.
 
@@ -29,7 +29,7 @@ Labs 1 and 2 require the Jumpbox. The subsequent labs all use the Azure Cloud Sh
     ```
 3. Deploy the jumpbox to the Resource Group you created in the previous step
     ```
-    AZ CLI: az group deployment create --name akslabdeploy --resource-group akslab-jumpbox --template-file aks-jumpvm.json --parameters aks-jumpvm.parameters.json --verbose
+    AZ CLI: az group deployment create --name akslabdeploy --resource-group akslab-jumpbox --template-file ./aks-jumpvm.json --parameters ./aks-jumpvm.parameters.json --verbose
     ```
     Or
     ```

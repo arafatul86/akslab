@@ -55,7 +55,7 @@
     {
       "type": "Microsoft.Compute/virtualMachines",
       "name": "[parameters('virtualMachineName')]",
-      "apiVersion": "2016-04-30-preview",
+      "apiVersion": "2017-12-01",
       "location": "[parameters('location')]",
       "properties": {
         "osProfile": {
