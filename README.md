@@ -1,22 +1,3 @@
-# akslab
-Random AKS lab material
-
-# Test locally
-
-cd ~/blackbelt-aks-hackfest/app/db/
-
-mongoimport --host localhost:27017 --db webratings --collection heroes --type json --file ./heroes.json --jsonArray && mongoimport --host localhost:27017 --db webratings --collection ratings --type json --file ./ratings.json --jsonArray && mongoimport --host localhost:27017 --db webratings --collection sites --type json --file ./sites.json --jsonArray
-
-cd ~/blackbelt-aks-hackfest/app/api
-
-sudo nano package.json:
-"localmachine": "NODE_ENV='development' MONGODB_URI='mongodb://localhost:27019/webratings' node ./bin/www" ->
-"localmachine": "NODE_ENV='development' MONGODB_URI='mongodb://localhost:27017/webratings' node ./bin/www"
-
-
-curl http://localhost:3000/api/heroes
-
-
 # Initial Setup and Running App on Local Machine
 
 ## Work Environment
@@ -41,11 +22,17 @@ Labs 1 and 2 require the Jumpbox. The subsequent labs all use the Azure Cloud Sh
 2. Create new Resource Group
     ```
     AZ CLI: az group create --name akslab-jumpbox --location westeurope
+    ```
+    Or
+    ```
     Powershell: New-AzureRmResourceGroup -Name akslab-jumpbox -Location westeurope
     ```
 3. Deploy the jumpbox to the Resource Group you created in the previous step
     ```
     AZ CLI: az group deployment create --name akslabdeploy --resource-group akslab-jumpbox --template-file aks-jumpvm.json --parameters aks-jumpvm.parameters.json --verbose
+    ```
+    Or
+    ```
     Powershell: New-AzureRmResourceGroupDeployment -Name akslabdeploy -ResourceGroupName akslab-jumpbox -TemplateFile aks-jumpvm.json -TemplateParameterFile aks-jumpvm.parameters.json -Verbose
     ```
 4. Login to the jumpbox with SSH using the FQDN output from the deployment

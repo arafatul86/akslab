@@ -229,7 +229,18 @@
       "dependsOn": [
         "[concat('Microsoft.Compute/virtualMachines/',parameters('virtualMachineName'))]"
       ],
-      "properties": {}
+      "properties": {
+        "publisher": "Microsoft.Azure.Extensions",
+        "type": "CustomScript",
+        "typeHandlerVersion": "2.0",
+        "autoUpgradeMinorVersion": true,
+        "settings": {
+          "fileUris": [
+            "https://raw.githubusercontent.com/ncmpuolitaival/akslab/master/resources/aks-workshop-init.sh"
+          ],
+          "commandToExecute": "[concat(variables('customScriptCommand'),' ',variables('scriptName'),' ',variables('scriptClose'))]"
+        }
+      }
     }
   ],
   "outputs": {
