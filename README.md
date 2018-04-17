@@ -123,5 +123,6 @@ Stop the MongoDB to free the port 27017 on the jumpbox.
 
 ## Contiune labs
 
-Proceed with lab number 2:
-https://github.com/gkaleta/blackbelt-aks-hackfest/blob/master/linux-container-workshop/hol-content/02-dockerize-apps.md
+Proceed with other labs on  https://github.com/Azure/blackbelt-aks-hackfest
+
+Direct link to next lab: https://github.com/Azure/blackbelt-aks-hackfest/blob/master/labs/day1-labs/02-dockerize-apps.md
