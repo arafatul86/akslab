@@ -29,6 +29,10 @@ Labs 1 and 2 require the Jumpbox. The subsequent labs all use the Azure Cloud Sh
     ```
 3. Deploy the jumpbox to the Resource Group you created in the previous step
     ```
+    cd akslab/resources
+    ```
+    And then
+    ```
     AZ CLI: az group deployment create --name akslabdeploy --resource-group akslab-jumpbox --template-file ./aks-jumpvm.json --parameters ./aks-jumpvm.parameters.json --verbose
     ```
     Or
