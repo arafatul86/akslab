@@ -1,4 +1,4 @@
-# LAB 1: Initial Setup and Running App on Local Machine
+# LAB 0 & 1: Initial Setup and Running App on Local Machine
 
 ## Work Environment
 
@@ -13,6 +13,9 @@ There are two environments you will be working in for the exercises today.
 Labs 1 and 2 require the Jumpbox. The subsequent labs all use the Azure Cloud Shell.
 
 ## Setup the Jumpbox VM
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fncmpuolitaival%2Fakslab%2Fmaster%2Fresources%2Faks-jumpvm.json" target="_blank">
+    <img src="http://azuredeploy.net/deploybutton.png"/>
+</a>
 
 1. Clone the Github repo via the command line
 
