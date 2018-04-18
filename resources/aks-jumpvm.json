@@ -3,43 +3,56 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "location": {
-      "type": "string"
+      "type": "string",
+      "defaultValue": "westeurope"
     },
     "virtualMachineName": {
-      "type": "string"
+      "type": "string",
+      "defaultValue": "jump-vm"
     },
     "virtualMachineSize": {
-      "type": "string"
+      "type": "string",
+      "defaultValue": "Standard_D2_v2"
     },
     "adminUsername": {
-      "type": "string"
+      "type": "string",
+      "defaultValue": "jumpadmin"
     },
     "virtualNetworkName": {
-      "type": "string"
+      "type": "string",
+      "defaultValue": "jump-env-vnet"
     },
     "networkInterfaceName": {
-      "type": "string"
+      "type": "string",
+      "defaultValue": "jump-vm-nic"
     },
     "networkSecurityGroupName": {
-      "type": "string"
+      "type": "string",
+      "defaultValue": "jump-env-nsg"
     },
     "adminPassword": {
-      "type": "securestring"
+      "type": "securestring",
+      "defaultValue": ""
     },
     "addressPrefix": {
-      "type": "string"
+      "type": "string",
+      "defaultValue": "10.100.0.0/16"
     },
     "subnetName": {
-      "type": "string"
+      "type": "string",
+      "defaultValue": "default"
     },
     "subnetPrefix": {
-      "type": "string"
+      "type": "string",
+      "defaultValue": "10.100.0.0/24"
     },
     "publicIpAddressType": {
-      "type": "string"
+      "type": "string",
+      "defaultValue": "Dynamic"
     },
     "publicIpAddressSku": {
-      "type": "string"
+      "type": "string",
+      "defaultValue": "Basic"
     }
   },
   "variables": {
