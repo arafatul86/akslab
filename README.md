@@ -36,11 +36,11 @@ Labs 1 and 2 require the Jumpbox. The subsequent labs all use the Azure Cloud Sh
     ```
     And then
     ```
-    AZ CLI: az group deployment create --name akslabdeploy --resource-group akslab-jumpbox --template-file ./aks-jumpvm.json --parameters ./aks-jumpvm.parameters.json --verbose
+    AZ CLI: az group deployment create --name akslabdeploy --resource-group akslab-jumpbox --template-file ./aks-jumpvm.json --parameters ./aks-jumpvm.parameters.json
     ```
     Or
     ```
-    Powershell: New-AzureRmResourceGroupDeployment -Name akslabdeploy -ResourceGroupName akslab-jumpbox -TemplateFile aks-jumpvm.json -TemplateParameterFile aks-jumpvm.parameters.json -Verbose
+    Powershell: New-AzureRmResourceGroupDeployment -Name akslabdeploy -ResourceGroupName akslab-jumpbox -TemplateFile aks-jumpvm.json -TemplateParameterFile aks-jumpvm.parameters.json
     ```
 4. Login to the jumpbox with SSH using the FQDN output from the deployment
 
