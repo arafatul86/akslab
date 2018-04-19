@@ -16,9 +16,9 @@ Labs 1 and 2 require the Jumpbox. The subsequent labs all use the Azure Cloud Sh
 
 You need to have Azure Command Line Interface(CLI) or Powershell and Git installed on you machine in order to be able complete the manual setup.
 
-Azure tools: <a href="https://azure.microsoft.com/en-us/downloads/"/>
+<a href="https://azure.microsoft.com/en-us/downloads/"/>Azure tools</a>
 
-Git download: <a href="https://git-scm.com/downloads"/>
+<a href="https://git-scm.com/downloads"/>Git download</a>
 
 ## Easy setup
 
