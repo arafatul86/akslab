@@ -14,6 +14,12 @@ Labs 1 and 2 require the Jumpbox. The subsequent labs all use the Azure Cloud Sh
 
 ## Setup the Jumpbox VM
 
+You need to have Azure Command Line Interface(CLI) or Powershell and Git installed on you machine in order to be able complete the manual setup.
+
+Azure tools: <a href="https://azure.microsoft.com/en-us/downloads/"/>
+
+Git download: <a href="https://git-scm.com/downloads"/>
+
 ## Easy setup
 
 1. Start the jumpbox deployment by clicking on the 'Deploy to Azure' button below
@@ -28,6 +34,7 @@ Labs 1 and 2 require the Jumpbox. The subsequent labs all use the Azure Cloud Sh
 3. Login to the jumpbox with SSH
 
 ## Manual setup:
+
 1. Clone the Github repo via the command line
 
     ```
