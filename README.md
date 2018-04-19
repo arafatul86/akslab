@@ -1,4 +1,4 @@
-# LAB 0 & 1: Initial Setup and Running App on Local Machine
+# LAB 0: Initial Setup
 
 ## Work Environment
 
@@ -63,6 +63,8 @@ Git download: <a href="https://git-scm.com/downloads"/>
 4. Jumpbox FQDN, username and password are listed in the deployment output
 
 5. Login to the jumpbox via SSH
+
+# LAB 1: Running App on Local Machine
 
 ## Clone Lab Github Repo
 
