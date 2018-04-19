@@ -13,6 +13,7 @@ There are two environments you will be working in for the exercises today.
 Labs 1 and 2 require the Jumpbox. The subsequent labs all use the Azure Cloud Shell.
 
 ## Setup the Jumpbox VM
+Easy setup:
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fncmpuolitaival%2Fakslab%2Fmaster%2Fresources%2Faks-jumpvm.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
@@ -42,7 +43,9 @@ Labs 1 and 2 require the Jumpbox. The subsequent labs all use the Azure Cloud Sh
     ```
     Powershell: New-AzureRmResourceGroupDeployment -Name akslabdeploy -ResourceGroupName akslab-jumpbox -TemplateFile aks-jumpvm.json -TemplateParameterFile aks-jumpvm.parameters.json
     ```
-4. Login to the jumpbox with SSH using the FQDN output from the deployment
+4. Login to the jumpbox with SSH 
+ - If you deployed the jumpbox using the 'deploy to azure' button, to get the jumpbox FQDN you need to go to the 'akslab-jumpbox' resource group in Azure Portal, select the Public IP resource and copy the DNS name.
+ - If you created the jumpbox with AZ Cli or Powershell, jumpbox FQDN, username and password are listed in the deployment output
 
 ## Clone Lab Github Repo
 
